@@ -2,7 +2,6 @@
 #"google-authenticator"
  
 #RUN THIS SCRIPT NOW IT WILL CONFIGURE GOOGLE AUTHENCATION
-sudo echo $google_authenticator >> provided.txt
 sudo echo 'auth required pam_google_authenticator.so' >> /etc/pam.d/sshd
 sudo echo 'AuthenticationMethods publickey,keyboard-interactive' >> /etc/ssh/sshd_config
 sudo sed -i '52s/@include common-auth/#@include common-auth/' /etc/pam.d/sshd
