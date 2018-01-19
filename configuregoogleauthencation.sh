@@ -1,6 +1,6 @@
-# RUN THIS COMMAND 
+# RUN THIS COMMAND YOU WILL GET CODE EITHER SCAN OR TYPE IN PHONE  
 google-authenticator 
-#RUN THIS SCRIPT NOW
+#RUN THIS SCRIPT NOW IT WILL CONFIGURE GOOGLE AUTHENCATION
 sudo echo $google_authenticator >> provided.txt
 sudo echo 'auth required pam_google_authenticator.so' >> /etc/pam.d/sshd
 sudo echo 'AuthenticationMethods publickey,keyboard-interactive' >> /etc/ssh/sshd_config
